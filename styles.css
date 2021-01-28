@@ -41,3 +41,17 @@ p {
   padding: 0.25rem;
   letter-spacing: 0.1rem;
 }
+
+#tip {
+  width: 30vw;
+  padding: 0.5rem 0.25rem;
+}
+
+span>p {
+  width: 15vw;
+  padding: 5px 10px;
+}
+
+#total {
+  color: royalblue;
+}

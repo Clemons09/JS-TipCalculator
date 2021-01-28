@@ -12,18 +12,18 @@ function calculateTotal() {
     numPeople = 1;
   }
 
-  let total = (billAmt * serviceQual) / numPeople;
+  let total = (billAmt / numPeople) * serviceQual;
   total = Math.round(total * 100) / 100;
   total = total.toFixed(2);
 
-  document.getElementById("total").innerHTML = "<p>Each Person Owes:<p>" + " " + "<sup>$</sup>" + total;
+  document.getElementById("total").innerHTML = "<p>Suggested Tip For Each Person:<p>" + " " + "<sup>$</sup>" + total;
 }
 
 
 
 document.getElementById("calc").onclick = function() {
   calculateTotal();
-  document.getElementById("tip").style.display = "block";
+  document.getElementById("total").style.display = "block";  
 };
 
 
